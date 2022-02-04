@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container container-lg">
+            <div class="row">
+                <div class="col-md-6">      <!-- LEFT SIDE -->
+                    <!-- CAROUSEL  -->
+                    <div class="carousel">
+                        <div id="mainImg" class="zoomIn">
+                            <div class="mainCarouselImg active"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_1_1000x1000_e58c298c-f407-4e79-93b4-6535c5293a0e_720x.jpg?v=1619051777" alt="Product picture"></div>
+                            <div class="mainCarouselImg"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_2_1000x1000_0e30b4da-a1da-4971-a21e-75590e866301_720x.jpg?v=1619051811" alt="Hand holding a pill"></div>
+                            <div class="mainCarouselImg"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_3_1000x1000_e08be43e-8b07-4105-a788-b2377fc6806d_720x.jpg?v=1619051840" alt="A man with a pill in his mouth"></div>
+                            <div class="mainCarouselImg"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_4_1000x1000_dddec3a2-7b7d-483d-ae4f-ba8d15746ce7_720x.jpg?v=1619051899" alt="Recommended dosage"></div>
+                            <div class="mainCarouselImg"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_5_1000x1000_e24a4c7e-f73a-45a9-801e-8977eb33f462_720x.png?v=1619051930" alt="Suplement Facts"></div>
+                        </div>
+                        <div class="row carousel-buttons">
+                            <div class="col-6 zoom">
+                                <a href="#" class="zoomIn">Click image to Zoom<span class="carousel-zoom"></span></a>
+                            </div>
+                            <div class="col-6 details">
+                                <a href="#" id="zoomDetails">Suplements Facts<span class="carosuel-details"></span></a>
+                            </div>
+                        </div>
+                        <div class="carousel-thumbs">
+                            <button class="carousel-controls-prev" onclick="carouselPrev()"></button>
+                            <div class="thumbs">
+                                <div class="thumbs-wrapper" id="wrapper">
+                                    <div class="thumbnail"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_1_1000x1000_e58c298c-f407-4e79-93b4-6535c5293a0e_720x.jpg?v=1619051777" alt="Product picture"></div>
+                                    <div class="thumbnail"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_2_1000x1000_0e30b4da-a1da-4971-a21e-75590e866301_720x.jpg?v=1619051811" alt="Hand holding a pill"></div>
+                                    <div class="thumbnail"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_3_1000x1000_e08be43e-8b07-4105-a788-b2377fc6806d_720x.jpg?v=1619051840" alt="A man with a pill in his mouth"></div>
+                                    <div class="thumbnail"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_4_1000x1000_dddec3a2-7b7d-483d-ae4f-ba8d15746ce7_720x.jpg?v=1619051899" alt="Recommended dosage"></div>
+                                    <div class="thumbnail"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_5_1000x1000_e24a4c7e-f73a-45a9-801e-8977eb33f462_720x.png?v=1619051930" alt="Suplement Facts"></div>
+                                </div>
+                            </div>
+                            <button class="carousel-controls-next" onclick="carouselNext()"></button>
+                        </div>
+                    </div>
+                    <!-- STAMPS -->
+                    <div class="stamps">
+                        <div class="stamps-wrapper">
+                            <div class="stamps-item">
+                                <div class="stamps-img-wrapper">
+                                    <img src="https://cdn.shop.humann.com/nongmo-badge.png" alt="">
+                                </div>
+                                <div class="stamps-txt-wrapper">
+                                    <p class="stamps-txt">Non-<br>GMO</p>
+                                </div>
+                            </div>
+                            <div class="stamps-item">
+                                <div class="stamps-img-wrapper">
+                                    <img src="https://cdn.shop.humann.com/vegan-badge.png" alt="">
+                                </div>
+                                <div class="stamps-txt-wrapper">
+                                    <p class="stamps-txt">Vegan<br>Friendly</p>
+                                </div>
+                            </div>
+                            <div class="stamps-item">
+                                <div class="stamps-img-wrapper">
+                                    <img src="https://cdn.shop.humann.com/glutenfree-badge.png" alt="">
+                                </div>
+                                <div class="stamps-txt-wrapper">
+                                    <p class="stamps-txt">Gluten<br>Free</p>
+                                </div>
+                            </div>
+                            <div class="stamps-item">
+                                <div class="stamps-img-wrapper">
+                                    <img src="https://cdn.shop.humann.com/soyfree-badge.png" alt="">
+                                </div>
+                                <div class="stamps-txt-wrapper">
+                                    <p class="stamps-txt">Soy<br>Free</p>
+                                </div>
+                            </div>
+                            <div class="stamps-item">
+                                <div class="stamps-img-wrapper">
+                                    <img src="https://cdn.shop.humann.com/fastmelt-badge.png" alt="">
+                                </div>
+                                <div class="stamps-txt-wrapper">
+                                    <p class="stamps-txt">Fast Melt<br>Tablets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">      <!-- LEFT SIDE -->
+                    <div class="description">
+                        <h1 class="title">Advanced Immune Support</h1>
+                        <a href="#reviews">
+                            <div class="star-container">
+                                <div class="star-rating">
+                                    <span class="rating-bottom"></span>
+                                    <span class="rating-top"></span>
+                                </div>
+                            </div>
+                            <span class="review">36 Reviews</span>
+                        </a>
+                        <p class="in-stock">In Stock and Ready to Ship!</p>
+                        <div class="select-price">
+                            <div class="pricing">
+                                <!-- <span class="discount">$34.95</span> -->
+                                <span class="product-price">$29.95</span>
+                            </div>
+                            <form action="#" class="select-form">
+                                <select name="amount" id="amount">  <!-- TEMPORAL ---------------------------------->
+                                    <option value="1">Buy 1</option>
+                                    <option value="2">Buy 2</option>
+                                    <option value="3">Buy 3</option>
+                                </select>
+                                <button type="submit">
+                                    <span>add to cart</span>
+                                </button>
+                                <p class="price-info">90 Day Satisfaction Guarantee</p>
+                            </form>
+                        </div>
+                        <div class="product-description">
+                            <h3>Easier immune support. No water needed!</h3>
+                            <p>Meet a convenient way to promote a healthy immune system. Advanced Immune Support citrus-flavored tablets dissolve right in your mouth. Just one easy serving per day:</p>
+                            <ul>
+                                <li>Promotes a healthy immune system</li>
+                                <li>Supports our natural defenses</li>
+                                <li>Supports immune health in times of stress</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FULLSCREEN CAROUSEL -->
+    <div class="carousel-fullscreen" id="carousel-fullscreen">
+        <button class="left">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175" xml:space="preserve"><g><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></g></svg>
+        </button>
+        <div class="fullscreen-wrapper">
+            <div class="large-img active"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_1_1000x1000_e58c298c-f407-4e79-93b4-6535c5293a0e_720x.jpg?v=1619051777" alt="Product picture"></div>
+            <div class="large-img"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_2_1000x1000_0e30b4da-a1da-4971-a21e-75590e866301_720x.jpg?v=1619051811" alt="Hand holding a pill"></div>
+            <div class="large-img"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_3_1000x1000_e08be43e-8b07-4105-a788-b2377fc6806d_720x.jpg?v=1619051840" alt="A man with a pill in his mouth"></div>
+            <div class="large-img"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_4_1000x1000_dddec3a2-7b7d-483d-ae4f-ba8d15746ce7_720x.jpg?v=1619051899" alt="Recommended dosage"></div>
+            <div class="large-img"><img src="https://cdn.shopify.com/s/files/1/0040/5526/9487/products/Carousel_5_1000x1000_e24a4c7e-f73a-45a9-801e-8977eb33f462_720x.png?v=1619051930" alt="Suplement Facts"></div>
+        </div>
+        <button class="right">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175" xml:space="preserve"> <g><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></g></svg>
+        </button>
+        <button class="close">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306C514.019,27.23,514.019,14.135,505.943,6.058z"></path></g></g><g><g><path d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z"></path></g></g></svg>
+        </button>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
